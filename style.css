@@ -1,0 +1,349 @@
+/* ベーススタイル */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+  /* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #005ffb;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff; /* ロゴのテキストを白に */
+    text-decoration: none;
+    font-size: 1.5rem; /* お好みで調整 */
+    font-weight: bold;
+  }
+
+.nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* ヒーローセクション */
+.hero {
+    text-align: center;
+    background: #f0f7ff;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #005ffb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.hero button:hover {
+    background: #0044bb;
+}
+
+/* 機能紹介 */
+.features {
+    padding: 40px 20px;
+    background: #fff;
+}
+    
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-list article {
+    flex: 1 1 200px;
+    max-width: 300px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.feature-list h3 {
+    margin-top: 0;
+}
+
+/* 料金プラン */
+.plans {
+    padding: 40px 20px;
+    background: #f0f7ff;
+}
+
+.plans h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.plan-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan-card {
+    flex: 1 1 200px;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+}
+
+.plan-card h3 {
+    margin-top: 0;
+}
+
+.plan-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* お問い合わせフォーム */
+.contact {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 送信ボタン */
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px;
+    background: #005ffb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+background: #0044bb;
+}
+
+  /* フッター */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #e2e2e2;
+}
+
+/* 各 article 内の picture 要素をブロック表示＆中央寄せ */
+.feature-list article picture {
+    display: block;
+    margin-top: 10px;    /* テキストと画像の間に余白を追加 */
+    text-align: center;
+}
+
+/* 画像自体をレスポンシブ対応に */
+.feature-list article picture img {
+    max-width: 100%;  /* 横幅が article を超えないように */
+    height: auto;     /* アスペクト比を維持 */
+    display: block;   /* ブロック要素にすることで余計な余白を排除 */
+    margin: 0 auto;   /* 中央寄せ */
+}
+
+/* 各 article 内の picture 要素に枠を追加 */
+.feature-list article picture {
+    display: block;
+    margin-top: 10px;    /* テキストと画像の間に余白を追加 */
+    text-align: center;
+    
+    /* ここから枠の設定 */
+    border: 2px solid #ccc;  /* 枠の太さ、種類、色 */
+    padding: 5px;            /* 枠と画像の間に余白を追加 */
+    border-radius: 5px;      /* 角を丸める（お好みで） */
+}
+
+.plans {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  .plans h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .plan-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .plan-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .plan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
+  .plan-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+  }
+
+  .price {
+    font-size: 1.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+  .plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .plan-card ul li {
+    margin: 10px 0;
+    color: #666;
+  }
+
+  .checkout-button {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .checkout-button:hover {
+    background: #0056b3;
+  }
+
+  body {
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+  }
+
+  /* セクション全体のスタイリング */
+  .features {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  /* Grid レイアウト（記事部分） */
+  .feature-list {
+    display: grid;
+    grid-gap: 2rem;
+    /* デバイス幅によってカラム数が自動調整される */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  /* 各記事（カード）のスタイリング */
+  .feature-list article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  /* ホバー時の軽いアニメーション */
+  .feature-list article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .feature-list article h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+
+  .feature-list article p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+
+  /* 画像サイズを揃える */
+  .feature-list article picture img {
+    width: 100%;
+    height: 200px;  /* 画像の高さを固定 */
+    border-radius: 4px;
+  }
