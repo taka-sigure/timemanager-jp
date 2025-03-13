@@ -519,4 +519,7 @@ background: #0044bb;
     .card-content p {
       font-size: 0.9rem;
     }
+    .footer a {
+      font-size: 0.5rem;
+    }
   }
